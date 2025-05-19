@@ -11,8 +11,8 @@ RUN apt-get update && \
     dpkg-reconfigure -f noninteractive tzdata
 
 # Copy the startup script
-COPY start.sh /start.sh
-RUN chmod +x /start.sh
+COPY start.sh start.sh
+RUN chmod +x start.sh
 
 EXPOSE 8080
 
